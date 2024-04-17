@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -63,15 +63,10 @@
                 <div class="form_blocks">
                     <span id="firstNameError"></span>
                     <input type="text" placeholder="Имя" id="firstName" onchange = "checkInput('firstName', 'firstNameError', /^[a-zA-Zа-яА-ЯёЁ\s]{2,15}$/, 'Введите корректное имя');">
-                    
                     <span id="lastNameError"></span>
                     <input type="text" placeholder="Фамилия" id="lastName" onchange = "checkInput('lastName', 'lastNameError', /^[a-zA-Zа-яА-ЯёЁ\s]{2,20}$/, 'Введите корректную фамилию');">
-                    
                     <span id="emailError"></span>
                     <input type="email" placeholder="E-mail" id="email" onchange="checkInput('email', 'emailError', /\S+@\S+\.\S+/, 'Введите корректный e-mail');;">
-                    
-                    
-                    <span id="productError"></span>
                     <input type="text" placeholder="Что вас интересует" id="product" onchange="checkInput('product', 'productError', /[a-zA-Zа-яА-ЯёЁ\s]{2,15}$/, 'Введите корректное название товара');">
                     
                    
