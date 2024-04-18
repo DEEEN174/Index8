@@ -22,8 +22,6 @@ document.getElementById('productForm').addEventListener('submit', function(event
     isValid &= checkInput('lastName', 'lastNameError', /^[a-zA-Zа-яА-ЯёЁ\s]{2,20}$/, 'Введите корректную фамилию');
     isValid &= checkInput('email', 'emailError', /\S+@\S+\.\S+/, 'Введите корректный e-mail');
     isValid &= checkInput('phone', 'phoneError', /^\+?\d{11}$/, 'Введите корректный номер телефона');
-    isValid &= checkInput('product', 'productError', /[a-zA-Zа-яА-ЯёЁ\s]{2,15}$/, 'Введите корректное название товара');
-    isValid &= checkInput('quantity', 'quantityError', /^\d{2,4}$/, 'Введите корректное количество товара');
 
     if (!isValid) {
         event.preventDefault();
