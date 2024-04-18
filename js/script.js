@@ -9,7 +9,7 @@ function checkInput(id, errorId, regex, errorMessage) {
         return true;
     } else {
         errorSpan.style.display = "block";
-        input.style.border = "1px solid red";
+        input.style.border = "1px solid orange";
         errorSpan.textContent = errorMessage;
         return false;
     }
